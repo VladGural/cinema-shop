@@ -23,20 +23,22 @@ GET: /shopping-carts/by-user - user
 GET: /orders - user
 POST: /orders/complete - user
 ``` 
+~~~
 *Firstly, in this application already exist
 two users
-- Username "vlad@gmail.com" Password "1234" with role ADMIN
+  Username "vlad@gmail.com" Password "1234" with role ADMIN
   Username "user@gmail.com" Password "1234" with role USER
   Yoy can register new users using Post method to url /register with body like
   {
-  "email": "UserName@Gmail.com",
-  "password": "1234",
-  "repeatPassword": "1234"
+    "email": "UserName@Gmail.com",
+    "password": "1234",
+    "repeatPassword": "1234"
   }
 
   You also can receive user create Get method to url /users/by-email?email=vlad@gmail.com
   You should have role ADMIN
-
+~~~
+~~~
 * You can add new Movie using Post method to url /movies with body like
   {
   "title": "Name of Movie",
@@ -46,7 +48,8 @@ two users
 
   You also can receive all movies create Get method to url /movies
   You should have role ADMIN or USER
-
+~~~
+~~~
 * You can add new CinemaHall using Post method to url /cinema-halls with body like
   {
   "capacity": 100,
@@ -56,7 +59,8 @@ two users
 
   You also can receive all cinema halls create Get method to url /cinema-halls
   You should have role ADMIN or USER
-
+~~~
+~~~
 * You can add new Movie Sessions using Post method to url /movie-sessions with body like
   {
   "movieId": 1,
@@ -79,7 +83,8 @@ two users
   You also can receive all available Movie Session create Get method to url 
   /cinema-halls/available?movieId=1&date=20.11.2021
   You should have role ADMIN or USER
-
+~~~
+~~~
 * You can add new Movie Sessions using (Ticket) to your Shopping-Cart create Put method to url
   /shopping-carts/movie-sessions?movieSessionId=1
   You should have role USER
@@ -87,12 +92,14 @@ two users
   You also can receive information from your Shopping-Cart create Get method to url
   /shopping-carts/by-user
   You should have role USER
-  
+~~~
+~~~
 * You can complete your Order create Post method to url /orders/complete
   You should have role USER
 
   You also can receive information about your Orders create Get method to url /orders
   You should have role ADMIN or USER 
+~~~
 ~~~
 
 
