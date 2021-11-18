@@ -3,7 +3,7 @@ In this project I want to show my skills in Java, Hibernate, Spring core Spring 
 Security.
 ~~~
 Completed structure of project is described below
-
+![pic](Hibernate_Cinema_Uml.png)
 
 
 *Firstly, in this application already exist 
