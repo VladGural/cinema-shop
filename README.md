@@ -2,6 +2,7 @@
 In this project I want to show my skills in Java, Hibernate, Spring core Spring Web and Spring 
 Security.
 
+This project maintains authentication, creation and simulates common ticket-purchase apps.
 Completed structure of project is described below
 
 ![pic](Hibernate_Cinema_Uml.png)
@@ -30,7 +31,7 @@ two users
   Username "user@gmail.com" Password "1234" with role USER
   Yoy can register new users using Post method to url /register with body like
   {
-    "email": "UserName@Gmail.com",
+    "email": "UserName@gmail.com",
     "password": "1234",
     "repeatPassword": "1234"
   }
@@ -81,11 +82,11 @@ two users
   You should have role ADMIN
 
   You also can receive all available Movie Session create Get method to url 
-  /cinema-halls/available?movieId=1&date=20.11.2021
+  /movie-sessions/available?movieId=1&date=20.11.2021
   You should have role ADMIN or USER
 ~~~
 ~~~
-* You can add new Movie Sessions using (Ticket) to your Shopping-Cart create Put method to url
+* You can add new Movie Sessions (Ticket) to your Shopping-Cart create Put method to url
   /shopping-carts/movie-sessions?movieSessionId=1
   You should have role USER
 
@@ -98,21 +99,9 @@ two users
   You should have role USER
 
   You also can receive information about your Orders create Get method to url /orders
-  You should have role ADMIN or USER 
+  You should have role USER 
 ~~~
-~~~
 
-
- 
-
-
-
-*Inside the application, you can create new Drivers, Manufacturers, Cars, and add Drivers to Cars.
-*You can also view list of existing Drivers, Manufacturers, and Cars.
-*You can delete Drivers, Manufacturers, and Cars.
-*Application doesn't allow you to create Drivers with same License Numbers 
-(License Number must be in particular format) or Manufacturers with same names.
-~~~    
 You can test the application by using the following url
 [https://tranquil-eyrie-87870.herokuapp.com/](https://tranquil-eyrie-87870.herokuapp.com/)
 
