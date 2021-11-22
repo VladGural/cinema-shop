@@ -1,7 +1,4 @@
 ## About this project
-In this project I want to show my skills in Java, Hibernate, Spring Core, Spring Web and Spring 
-Security.
-
 This project simulates common ticket-purchase apps, authentication is supported.<br>
 You can test the application by using the following url
 [https://tranquil-eyrie-87870.herokuapp.com/](https://tranquil-eyrie-87870.herokuapp.com/)
